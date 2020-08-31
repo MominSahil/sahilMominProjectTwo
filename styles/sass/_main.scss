@@ -1,0 +1,220 @@
+// start of .blog main on home page
+.blog {
+     main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .content {
+            width: 60%;
+            border-right: 4px solid $greenishCyan;
+            border-bottom: 4px solid $greenishCyan;
+            img {
+                width: calc(100% - 12px);
+                box-shadow: 20px 20px 0px -5px rgba(80,227,194,1);
+                transform: translateY(-25%);
+                max-height: 50vh;
+            }
+            .description {
+                padding: 0 5% 5% 10.71%;
+                h3 {
+                    font-size: 3.5rem;
+                    color: $spruce;
+                }
+                h6 {
+                    font-style: italic;
+                    color: $twilightBlue;
+                }
+                p {
+                    padding: 1rem 0;
+                }
+            }
+        }
+        .sideBar {
+            margin: 5rem 0;
+            width: 30%;
+            div {
+                padding-right: 2rem;
+                h5 {
+                    color: $twilightBlue;
+                    padding: 1rem 0;
+                }
+                a {
+                    color: $spruce;
+                    transition: $transition;
+                }
+                a:hover,
+                a:focus {
+                    font-weight: 700;
+                    letter-spacing: 3px;
+                }
+                p {
+                    margin: 0.5rem 0;
+                }
+                ul li::before {
+                    content: "•";
+                    padding-right: 0.5rem;
+                    color: $greenishCyan;
+                }
+            }
+        }
+        .comments {
+            padding: 5rem 0;
+            ul li {
+                width: 61.76%;
+                display: grid;
+                grid-template-columns: 15% 85%;
+                padding: 2rem 0;
+                img {
+                    margin: 1rem;
+                }
+                span {
+                    padding-left: 2rem;
+                    h5 {
+                        color: $twilightBlue;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        form {
+            width: 61.76%;
+            margin: 5rem 0;
+            background: $iceBlue;
+            ::placeholder {
+                font-family: $fontMain;
+                font-weight: 300;
+            }
+            div {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                input {
+                    width: 45%;
+                    padding: 2rem;
+                    border: none;
+                    border-bottom: 2px solid $greenishCyan;
+                } 
+            }
+            textarea {
+                width: 100%;
+                background: $iceBlue;
+                border: 2px solid $greenishCyan;
+                padding: 2rem;
+                margin: 3rem 0;   
+            }
+            button {
+                width: 100%;
+                padding: 0.5rem 0;
+                line-height: 3.2rem;
+                letter-spacing: 1px;
+                background: $twilightBlue;
+                color: #FFF;
+                border: none;
+                font-family: $fontHeading;
+                transition: $transition;
+            }
+            button:hover,
+            button:focus {
+                background: $greenishCyan;
+                color: $black;
+                letter-spacing: 4px;
+            }
+        }
+    }
+}
+// end of .blog main on home page
+
+// start of .contact main on home page
+.contact {
+    .wrapper {
+        position: relative;
+        form {
+            width: 70%;
+            max-height: 50vh;
+            padding: 5rem;
+            position: absolute;
+            bottom: 25%;
+            left: -5rem;
+            box-shadow: 20px 20px 0px -5px rgba(80,227,194,1);
+            background: $iceBlue;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            ::placeholder {
+                font-family: $fontMain;
+                font-weight: 300;
+            }
+            div {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                input {
+                    width: 45%;
+                    padding: 2rem;
+                    border: none;
+                    border-bottom: 2px solid $greenishCyan;
+                } 
+            }
+            textarea {
+                width: 100%;
+                background: $iceBlue;
+                border: 2px solid $greenishCyan;
+                padding: 2rem;
+                margin: 3rem 0;   
+            }
+            button {
+                width: 100%;
+                padding: 0.5rem 0;
+                line-height: 3.2rem;
+                letter-spacing: 1px;
+                background: $twilightBlue;
+                color: #FFF;
+                border: none;
+                font-family: $fontHeading;
+                transition: $transition;
+            }
+            button:hover,
+            button:focus {
+                background: $greenishCyan;
+                color: $black;
+                letter-spacing: 4px;
+            }
+        }
+        .contactInfo {
+            margin: 5rem 0;
+            width: 25%;
+            float: right;
+            p:first-of-type {
+                font-weight: 900;
+                padding: 1rem 0;
+            }
+            ul {
+                display: flex;
+                li {
+                    width: 4rem;
+                    height: 4rem;
+                    align-items: center;
+                    a {
+                        display: inline-block;
+                        color: $black;
+                        border-radius: 10px;
+                        transition: $transition;
+                    }
+                    a:hover,
+                    a:focus {
+                        font-size: 3rem;
+                        color: $spruce;
+                    }
+                }
+            }
+        }
+    }
+}
+// end of .contact main on contact page

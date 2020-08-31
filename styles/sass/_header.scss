@@ -1,0 +1,132 @@
+// start of common header nav elements
+header {
+    height: 60vh;
+    padding: 2rem 0;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            font-size: 3.46rem;
+            color: $greenishCyan;
+            font-family: $fontHeading;
+        }
+        .dropdown {
+            color: #FFF;
+            .fas {
+                display: none;
+                background: none;
+                border: none;
+                // width: 4rem;
+                transition: $transition;
+            }
+            ul {
+                display: flex;
+                a {
+                    padding: 1rem;
+                    color: #FFF;
+                    line-height: 2.9rem;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    transition: $transition;
+                }
+                a:hover,
+                a:focus {
+                    background: $iceBlue;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+// end of common header nav for all pages
+
+// start of .home header for home page
+.home header {
+    background: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    .wrapper {
+        height: 100%;
+        position: relative;
+    }
+    li:first-child a {
+        color: $greenishCyan;
+    }
+    img {
+        max-width: 50%;
+        max-height: 50vh;
+        position: absolute;
+        left: -8.82%;
+        bottom: -15%;
+    }
+    .headerBox {
+        align-content: center;
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        z-index: 10;
+        h3 {
+            font-size: calc(2.31rem + 2.77vw);
+            // font-size responsive from 62px @ 1400px to 32px @320px
+            font-family: $fontMain;
+            color: $spruce;
+        }
+        h1 {
+            font-size: calc(4.22rem + 4.31vw);
+            // font going from 111.2px @ 1600px to 50px @320px
+            font-family: $fontHeading;
+            letter-spacing: 0.5vw;
+            padding: calc(1rem + 2.25vw) 0;
+            color: $twilightBlue;
+        }
+        
+    }
+}
+// end of .home header for home page
+
+// start of .blog header for blog page
+.blog {
+    header {
+        background: url(../assets/blog-image-1.jpg);
+        background-size: cover;
+        background-position: center;
+        li:nth-of-type(3) a {
+            color: $greenishCyan;
+        }
+        h1 {
+            font-size: 8.7rem;
+            letter-spacing: 9px;
+            line-height: 5.8rem;
+            font-family: $fontMain;
+            color: #FFF;
+            margin-top: 25vh;
+        }
+    }
+}
+
+// end of .blog header for blog page
+
+// start of .contact header for contact page
+.contact {
+    header {
+        background: url(../assets/contact-image-1.jpg);
+        background-size: cover;
+        background-position: center;
+        li:nth-of-type(4) a {
+            color: $greenishCyan;
+        }
+        h1 {
+            font-size: 8.7rem;
+            letter-spacing: 9px;
+            line-height: 5.8rem;
+            font-family: $fontMain;
+            color: #FFF;
+            margin-top: 25vh;
+        }
+    }
+}
+
+// end of .contact header for contact page

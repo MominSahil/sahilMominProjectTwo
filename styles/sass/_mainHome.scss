@@ -1,0 +1,190 @@
+// start of .home page
+.home {
+    // start of visit section
+    .visit {
+        .wrapper {
+            margin: 10rem auto;
+            display: flex;
+            justify-content: space-between;
+            .visitText {
+                width: 60%;
+                h4 {
+                    font-size: 3.5rem;
+                    color: $spruce;
+                    line-height: 5.8rem;
+                    text-transform: capitalize;
+                }
+                p {
+                    padding: 1rem 0 2rem;
+                }
+                a {
+                    @include aTagDecor(1rem, 1rem, 1rem, 1rem, #FFF, $twilightBlue);
+                    font-family: $fontHeading;
+                    transition: $transition;
+                }
+                a:hover,
+                a:focus {
+                    border-radius: 10px;
+                    @include aTagDecor(1rem, 1rem, 1rem, 1rem, $black, $greenishCyan);
+                }
+            }
+            .visitImage {
+                width: 30%;
+                img {
+                    width: 100%;
+                    box-shadow: -20px 20px 0px -5px rgba(80,227,194,1);
+                }
+            }
+        }
+    }
+    // end of visit section
+    
+    // start of gallery
+    .gallery {
+        padding: 5rem 0;
+        background: $lightLightBlue;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                width: 30%;
+                a {
+                    img{
+                        transition: all 0.4s ease;
+                    }
+                }
+                a:hover > img,
+                a:focus > img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    // end of gallery
+
+    // start of about
+    .about {
+        padding: 5rem 0;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            li {
+                width: 45%;
+                padding: 2rem 0;
+                a {
+                    color: $spruce;
+                    font-size: 3rem;
+                    line-height: 5.8rem;
+                    letter-spacing: 3.2px;
+                    font-weight: bold;
+                    transition: $transition;
+                    .fas {
+                        color: $greenishCyan;
+                        width: 5rem;
+                        transition: $transition;
+                    }
+                }
+                a:hover > .fas,
+                a:focus > .fas,
+                a:hover,
+                a:focus {
+                    color: $black;
+                    letter-spacing: 4px;
+                }
+                p {
+                    padding-left: 5rem;
+                }
+            }
+        }
+    }
+    // end of about
+
+    // start of plan
+    .plan {
+        background: $lightLightBlue;
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div {
+                width: 45%;
+                padding: 5rem 0;
+                h4 {
+                    font-size: 3.5rem;
+                    line-height: 5.8rem;
+                    letter-spacing: 3.8px;
+                    color: $twilightBlue;
+                }
+                p {
+                    padding: 1rem 0 2rem;
+                }
+                a {
+                    @include aTagDecor(1rem, 1rem, 1rem, 1rem, #FFF, $twilightBlue);
+                    font-family: $fontHeading;
+                    transition: $transition;
+                }
+                a:hover,
+                a:focus {
+                    border-radius: 10px;
+                    @include aTagDecor(1rem, 1rem, 1rem, 1rem, $black, $greenishCyan);
+                }
+            }
+            div:first-of-type {
+                text-align: right;
+                img {
+                    width: calc(119.61% - 10px);
+                    box-shadow: 20px 20px 0px -5px rgba(80,227,194,1);
+                    margin-right: 10px;
+                    transform: translate(-17.89%, -29%);
+                }
+                p {
+                    padding-left: 9.8%;
+                }
+            }
+            div:last-of-type {
+                text-align: left;
+                img {
+                    width: calc(119.61% - 10px);
+                    box-shadow: -20px -20px 0px -5px rgba(80,227,194,1);
+                    margin-left: 10px;
+                    transform: translateY(29%);
+                }
+                p {
+                    padding-right: 9.8%;
+                }
+            }
+        }
+    }
+    // end of plan
+
+    // start of footer
+    footer {
+        .wrapper {
+            padding: 5rem 0;
+            text-align: center;
+            h4 {
+                font-size: 3.5rem;
+                color: $spruce;
+                line-height: 5.8rem;
+            }
+            p {
+                padding: 1rem 10rem 2rem;
+            }
+            a {
+                @include aTagDecor(1rem, 1rem, 1rem, 1rem, #FFF, $twilightBlue);
+                font-family: $fontHeading;
+                transition: $transition;
+            }
+            a:hover,
+            a:focus {
+                border-radius: 10px;
+                @include aTagDecor(1rem, 1rem, 1rem, 1rem, $black, $greenishCyan);
+            }
+        }
+    }
+    // end of footer
+}
+// end of .home page

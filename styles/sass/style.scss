@@ -1,0 +1,46 @@
+// declaring variables
+$greenishCyan: #50E3C2;
+$black: #2C2C2C;
+$iceBlue: #FAFFFE;
+$twilightBlue: #063974;
+$lightLightBlue: #D2F9F1;
+$spruce: #0C5F4C;
+$fontMain: 'Lato', sans-serif;
+$fontHeading: 'Playfair Display SC', serif;
+$transition: all 0.3s ease;
+
+// declaring mixin
+@mixin aTagDecor($padding-top, $padding-right, $padding-bottom, $padding-left, $color, $backColor) {
+    padding-top: $padding-top;
+    padding-right: $padding-right;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+    color: $color;
+    background: $backColor;
+}
+
+// importing partial files
+@import "setup";
+@import "header";
+@import "mainHome";
+@import "main";
+@import "mediaQueries";
+
+// common copyright tag for all pages
+.copyright {
+    background: $black;
+    text-align: center;
+    color: #FFF;
+    padding: 1rem 0;
+    a{
+        padding: 1rem 0.5rem;
+        color: #ea593e;
+        border-radius: 10px;
+        transition: $transition;
+    }
+    a:hover,
+    a:focus {
+        background: #ea593e;
+        color: #FFF;
+    }
+}
