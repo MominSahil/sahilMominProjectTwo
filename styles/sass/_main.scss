@@ -98,14 +98,26 @@
                     padding: 2rem;
                     border: none;
                     border-bottom: 2px solid $greenishCyan;
-                } 
+                    transition: $transition;
+                }
+                input:hover,
+                input:focus,
+                input:active {
+                    background: $lightLightBlue;
+                }
             }
             textarea {
                 width: 100%;
                 background: $iceBlue;
                 border: 2px solid $greenishCyan;
                 padding: 2rem;
-                margin: 3rem 0;   
+                margin: 3rem 0;
+                transition: $transition;   
+            }
+            textarea:hover,
+            textarea:focus,
+            textarea:active {
+                background: $lightLightBlue;
             }
             button {
                 width: 100%;
@@ -160,7 +172,12 @@
                     padding: 2rem;
                     border: none;
                     border-bottom: 2px solid $greenishCyan;
-                } 
+                }
+                input:hover,
+                input:focus,
+                input:active {
+                    background: $lightLightBlue;
+                }
             }
             textarea {
                 width: 100%;
@@ -168,6 +185,11 @@
                 border: 2px solid $greenishCyan;
                 padding: 2rem;
                 margin: 3rem 0;   
+            }
+            textarea:hover,
+            textarea:focus,
+            textarea:active {
+                background: $lightLightBlue;
             }
             button {
                 width: 100%;
