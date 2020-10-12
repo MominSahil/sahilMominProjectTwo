@@ -7,26 +7,30 @@
                 font-size: calc(1.39rem + 3.66vw);
             }
             .dropdown {
-                transition: $transition;
+                // transition: $transition;
                 .fas {
                     display: block;
                 }
                 ul {
+                    transition: all 0.3s ease-in-out;
                     position: fixed;
                     background: $iceBlue;
-                    position: absolute;
+                    display: inline-block;
+                    margin: 0;
                     z-index: 20;
                     right: -100rem;
+                    border-radius: 10px;
                     li {
                         width: 13rem;
                         height: 4rem;
                         text-align: right;
                         a {
                             color: $black;
+                            transition: $transition;
                         }
                         a:hover,
                         a:focus {
-                            font-size: 2.2rem;
+                            font-size: 2rem;
                             font-weight: bold;
                             background: none;
                         }
@@ -38,9 +42,7 @@
             .dropdown:active > ul {
                 position: absolute;
                 right: 0;
-                top: 2.5rem;
                 display: inline-block;
-                margin: 0;
             }
         }
     }
