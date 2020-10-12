@@ -955,6 +955,8 @@ header nav .dropdown ul a:focus {
 .contact .wrapper form div input:focus,
 .contact .wrapper form div input:active {
   background: #D2F9F1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact .wrapper form textarea {
@@ -963,6 +965,14 @@ header nav .dropdown ul a:focus {
   border: 2px solid #50E3C2;
   padding: 2rem;
   margin: 3rem 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact .wrapper form textarea:hover,
+.contact .wrapper form textarea:focus,
+.contact .wrapper form textarea:active {
+  background: #D2F9F1;
 }
 
 .contact .wrapper form textarea:hover,
@@ -1034,19 +1044,19 @@ header nav .dropdown ul a:focus {
   header nav .logo {
     font-size: calc(1.39rem + 3.66vw);
   }
-  header nav .dropdown {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
   header nav .dropdown .fas {
     display: block;
   }
   header nav .dropdown ul {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: fixed;
     background: #FAFFFE;
-    position: absolute;
+    display: inline-block;
+    margin: 0;
     z-index: 20;
     right: -100rem;
+    border-radius: 10px;
   }
   header nav .dropdown ul li {
     width: 13rem;
@@ -1055,10 +1065,12 @@ header nav .dropdown ul a:focus {
   }
   header nav .dropdown ul li a {
     color: #2C2C2C;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   header nav .dropdown ul li a:hover,
   header nav .dropdown ul li a:focus {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: bold;
     background: none;
   }
@@ -1067,9 +1079,7 @@ header nav .dropdown ul a:focus {
   header nav .dropdown:active > ul {
     position: absolute;
     right: 0;
-    top: 2.5rem;
     display: inline-block;
-    margin: 0;
   }
   .home header .logo span {
     padding: 0 0.5rem;
@@ -1312,22 +1322,6 @@ header nav .dropdown ul a:focus {
     float: none;
     width: 100%;
   }
-}
-
-input,
-textarea {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-input:hover,
-input:focus,
-input:active,
-textarea:hover,
-textarea:focus,
-textarea:active {
-  border: 2px solid #50E3C2;
-  background: #D2F9F1;
 }
 
 .copyright {

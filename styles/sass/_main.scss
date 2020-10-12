@@ -112,7 +112,7 @@
                 border: 2px solid $greenishCyan;
                 padding: 2rem;
                 margin: 3rem 0;
-                transition: $transition;   
+                transition: $transition;
             }
             textarea:hover,
             textarea:focus,
@@ -177,6 +177,7 @@
                 input:focus,
                 input:active {
                     background: $lightLightBlue;
+                    transition: $transition;
                 }
             }
             textarea {
@@ -185,6 +186,12 @@
                 border: 2px solid $greenishCyan;
                 padding: 2rem;
                 margin: 3rem 0;   
+                transition: $transition;
+            }
+            textarea:hover,
+            textarea:focus,
+            textarea:active {
+                background: $lightLightBlue;
             }
             textarea:hover,
             textarea:focus,
